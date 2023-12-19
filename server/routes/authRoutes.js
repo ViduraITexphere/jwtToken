@@ -11,9 +11,7 @@ const {
 router.use(
   cors({
     credentials: true,
-    // origin: "http://localhost:5173",
-    origin:
-      "https://65816564f2f2b6006ecfff6c--fanciful-figolla-262865.netlify.app/",
+    origin: process.env.CLIENT_URL,
     optionSuccessStatus: 200,
   })
 );

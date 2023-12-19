@@ -10,7 +10,7 @@ import axios from "axios";
 import Dashboard from "./pages/Dashboard";
 
 axios.defaults.withCredentials = true;
-axios.defaults.baseURL = "http://localhost:5000";
+axios.defaults.baseURL = import.meta.env.VITE_BACKEND_URL;
 
 function App() {
   return (
