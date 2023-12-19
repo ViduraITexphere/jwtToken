@@ -10,7 +10,7 @@ const {
 
 router.use(
   cors({
-    credentials: true,
+    // credentials: true,
     origin: process.env.CLIENT_URL,
     optionSuccessStatus: 200,
     // AccessControlAllowOrigin: process.env.CLIENT_URL,
