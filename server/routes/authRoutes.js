@@ -11,7 +11,7 @@ const {
 router.use(
   cors({
     credentials: true,
-    origin: process.env.CLIENT_URL,
+    origin: process.env.CLIENT_URL || "http://localhost:5173",
     optionSuccessStatus: 200,
     // AccessControlAllowOrigin: process.env.CLIENT_URL,
   })
